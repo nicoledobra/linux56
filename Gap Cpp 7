@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+bool substringExists(string s, string subs);
+int main()
+{
+    string s1, s2;
+    getline(cin, s1);
+    getline(cin, s2);
+    if( substringExists(s1, s2)){
+        cout << "Yes, it exists";
+    }
+  else{
+        cout << "No, it does not exist";
+    }
+    return 0;
+}
+
+bool substringExists(string s, string subs){
+    int len = subs.length();
+    for(int i = 0; i <= s.length() - len; i++){
+        if (s.substr(i, len) == subs){
+            return true;
+        }
+    } 
+    return false;
+}
