@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
-int howManySubstrings(string s, sting subs);
+int howManySubstrings(string s, string subs);
 int main(){
 string s1, s2;
 int total;
 getline(cin, s1);
 getline(cin, s2);
 total=howManySubstrings(s1, s2);
-cout << "Substring " + s2 + " appears in string " + s1 + " a total of " + total + " times.";
+cout << "Substring " << s2 << " appears in string " << s1 << " a total of " << total << " times.";
 return 0;
 }
-int howManySubstrings(string s, sting subs){
+int howManySubstrings(string s, string subs){
 int i;
 for (int a=0; a<=s.lenght()-subs.lenght(); a++){
 if (s.substr(a, subs.lenght())==subs){
-i++}
+i++;}
   }
 return i;
 }
