@@ -11,9 +11,9 @@ cout << "Substring " << s2 << " appears in string " << s1 << " a total of " << t
 return 0;
 }
 int howManySubstrings(string s, string subs){
-int i;
-for (int a=0; a<=s.lenght()-subs.lenght(); a++){
-if (s.substr(a, subs.lenght())==subs){
+int i=0;
+for (int a=0; a<=s.length()-subs.length(); a++){
+if (s.substr(a, subs.length())==subs){
 i++;}
   }
 return i;
