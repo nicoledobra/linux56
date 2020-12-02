@@ -1,0 +1,14 @@
+                                                           
+#include <iostream>                                                          
+using namespace std;
+                                         
+int main(){                                                  
+    int *punt;                                                 
+    int x=7;                                              
+    int y=3;                                                
+    punt=&x;                                                
+    x=29;                                                
+    cout << *punt << " " << y;                                                   
+}
+
+R: 29 3
