@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+char data(int *x, float *y, char *c){
+    *x=8;
+    *y=4.2;
+    *c='g';
+    return 'h' ;
+}
+
+int main(void){
+    int x=9;
+    float y=44.6;
+    char c='a';
+    c=data (&x, &y, &c);
+    cout << x << " " << y << " " << c << endl;
+    return 0;
+} 
+R:8 4.2 h
