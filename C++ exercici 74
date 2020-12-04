@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void sum(int *x, int *y, int *z){
+    *x=*x+2;
+    *y=*y+2;
+    *z=*z+2;
+}
+int main(void){
+    int x,y,z;
+    x=3;
+    y=10;
+    z=15;
+    sum (&x, &y, &z);
+    cout << x << " " << y << " " << z << endl;
+    return 0;
+}
+R:5 12 17
