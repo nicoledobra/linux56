@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+using namespace std;
+void reverse(unsigned int a);
+int main(){
+    int a;
+    cin >> a;
+    reverse(a);
+    return 0;
+}
+void reverse(unsigned int a){
+    if (a == 0){
+        cout << " ";
+    }else{
+        cout << a % 10;
+        reverse(a / 10);
+    }
+}
