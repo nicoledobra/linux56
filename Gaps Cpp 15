@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void info(int x, float y, char c);
+
+int main(){
+    int x=9;
+    float y=44.6;
+    char c='a';
+    info(x, y, c);
+    cout << x << " " << y << " " << c;
+    return 0;
+} 
+void info(int x, float y, char c)
+{
+    x=8;
+    y=4.2;
+    c='g';
+}
