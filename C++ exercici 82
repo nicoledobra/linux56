@@ -1,0 +1,19 @@
+# include<iostream>
+using namespace std;
+int divident(int a, int b);
+int main(){
+int a, b;
+ cin >> a >> b;
+
+ cout << divident(a, b);
+  return 0;
+}
+int divident(int a, int b){
+  if(a<b){
+  return 0;
+  }
+  else{
+  return divident(a-b, b)+1;
+}
+
+}
