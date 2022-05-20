@@ -1,0 +1,18 @@
+                                                           
+#include <iostream>                                                        
+using namespace std;
+                                         
+int main()
+{
+    int *punta, *puntb;
+    int x=7;    
+    int y=5;
+    punta=&x;
+    *punta=3;
+    puntb=&y;
+    *puntb=x;
+    x=9;
+    cout << *puntb << " " << *punta << " " << x << " " << y << endl;
+}
+
+R. 3993
